@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE425C871BD6440D0031F787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE425C861BD6440D0031F787 /* AppDelegate.swift */; };
+		AE425C891BD6440D0031F787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE425C881BD6440D0031F787 /* ViewController.swift */; };
+		AE425C8C1BD6440D0031F787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE425C8A1BD6440D0031F787 /* Main.storyboard */; };
+		AE425C8E1BD6440D0031F787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE425C8D1BD6440D0031F787 /* Assets.xcassets */; };
+		AE425C911BD6440D0031F787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE425C8F1BD6440D0031F787 /* LaunchScreen.storyboard */; };
+		AE425CB11BD645630031F787 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = AE425CB01BD645630031F787 /* blockerList.json */; };
+		AE425CB31BD645630031F787 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE425CB21BD645630031F787 /* ActionRequestHandler.swift */; };
+		AE425CB71BD645630031F787 /* Safari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE425CAE1BD645630031F787 /* Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE425CB51BD645630031F787 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE425C7B1BD6440D0031F787 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE425CAD1BD645630031F787;
+			remoteInfo = "Safari Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE425CA91BD644E30031F787 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE425CB71BD645630031F787 /* Safari Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE425C831BD6440D0031F787 /* Content Blocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Content Blocker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE425C861BD6440D0031F787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE425C881BD6440D0031F787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE425C8B1BD6440D0031F787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE425C8D1BD6440D0031F787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE425C901BD6440D0031F787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE425C921BD6440D0031F787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE425CAE1BD645630031F787 /* Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE425CB01BD645630031F787 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		AE425CB21BD645630031F787 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		AE425CB41BD645630031F787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE425C801BD6440D0031F787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE425CAB1BD645630031F787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE425C7A1BD6440D0031F787 = {
+			isa = PBXGroup;
+			children = (
+				AE425C851BD6440D0031F787 /* Content Blocker */,
+				AE425CAF1BD645630031F787 /* Safari Extension */,
+				AE425C841BD6440D0031F787 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE425C841BD6440D0031F787 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE425C831BD6440D0031F787 /* Content Blocker.app */,
+				AE425CAE1BD645630031F787 /* Safari Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE425C851BD6440D0031F787 /* Content Blocker */ = {
+			isa = PBXGroup;
+			children = (
+				AE425C861BD6440D0031F787 /* AppDelegate.swift */,
+				AE425C881BD6440D0031F787 /* ViewController.swift */,
+				AE425C8A1BD6440D0031F787 /* Main.storyboard */,
+				AE425C8D1BD6440D0031F787 /* Assets.xcassets */,
+				AE425C8F1BD6440D0031F787 /* LaunchScreen.storyboard */,
+				AE425C921BD6440D0031F787 /* Info.plist */,
+			);
+			path = "Content Blocker";
+			sourceTree = "<group>";
+		};
+		AE425CAF1BD645630031F787 /* Safari Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE425CB01BD645630031F787 /* blockerList.json */,
+				AE425CB21BD645630031F787 /* ActionRequestHandler.swift */,
+				AE425CB41BD645630031F787 /* Info.plist */,
+			);
+			path = "Safari Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE425C821BD6440D0031F787 /* Content Blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE425C951BD6440D0031F787 /* Build configuration list for PBXNativeTarget "Content Blocker" */;
+			buildPhases = (
+				AE425C7F1BD6440D0031F787 /* Sources */,
+				AE425C801BD6440D0031F787 /* Frameworks */,
+				AE425C811BD6440D0031F787 /* Resources */,
+				AE425CA91BD644E30031F787 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE425CB61BD645630031F787 /* PBXTargetDependency */,
+			);
+			name = "Content Blocker";
+			productName = "Content Blocker";
+			productReference = AE425C831BD6440D0031F787 /* Content Blocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE425CAD1BD645630031F787 /* Safari Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE425CB81BD645630031F787 /* Build configuration list for PBXNativeTarget "Safari Extension" */;
+			buildPhases = (
+				AE425CAA1BD645630031F787 /* Sources */,
+				AE425CAB1BD645630031F787 /* Frameworks */,
+				AE425CAC1BD645630031F787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Safari Extension";
+			productName = "Safari Extension";
+			productReference = AE425CAE1BD645630031F787 /* Safari Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE425C7B1BD6440D0031F787 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Droids on Roids";
+				TargetAttributes = {
+					AE425C821BD6440D0031F787 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					AE425CAD1BD645630031F787 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = AE425C7E1BD6440D0031F787 /* Build configuration list for PBXProject "Content Blocker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE425C7A1BD6440D0031F787;
+			productRefGroup = AE425C841BD6440D0031F787 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE425C821BD6440D0031F787 /* Content Blocker */,
+				AE425CAD1BD645630031F787 /* Safari Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE425C811BD6440D0031F787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE425C911BD6440D0031F787 /* LaunchScreen.storyboard in Resources */,
+				AE425C8E1BD6440D0031F787 /* Assets.xcassets in Resources */,
+				AE425C8C1BD6440D0031F787 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE425CAC1BD645630031F787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE425CB11BD645630031F787 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE425C7F1BD6440D0031F787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE425C891BD6440D0031F787 /* ViewController.swift in Sources */,
+				AE425C871BD6440D0031F787 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE425CAA1BD645630031F787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE425CB31BD645630031F787 /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE425CB61BD645630031F787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE425CAD1BD645630031F787 /* Safari Extension */;
+			targetProxy = AE425CB51BD645630031F787 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE425C8A1BD6440D0031F787 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE425C8B1BD6440D0031F787 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE425C8F1BD6440D0031F787 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE425C901BD6440D0031F787 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE425C931BD6440D0031F787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE425C941BD6440D0031F787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE425C961BD6440D0031F787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.droidsonroids.Content-Blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE425C971BD6440D0031F787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.droidsonroids.Content-Blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE425CB91BD645630031F787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = "Safari Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.droidsonroids.Content-Blocker.Safari-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AE425CBA1BD645630031F787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = "Safari Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.droidsonroids.Content-Blocker.Safari-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE425C7E1BD6440D0031F787 /* Build configuration list for PBXProject "Content Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE425C931BD6440D0031F787 /* Debug */,
+				AE425C941BD6440D0031F787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE425C951BD6440D0031F787 /* Build configuration list for PBXNativeTarget "Content Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE425C961BD6440D0031F787 /* Debug */,
+				AE425C971BD6440D0031F787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE425CB81BD645630031F787 /* Build configuration list for PBXNativeTarget "Safari Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE425CB91BD645630031F787 /* Debug */,
+				AE425CBA1BD645630031F787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE425C7B1BD6440D0031F787 /* Project object */;
+}
